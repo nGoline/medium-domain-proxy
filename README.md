@@ -4,73 +4,68 @@ This Node.js Proxy allows your Medium page to have a custom domain.
 
 ## Getting Started
 
-Go to your user folder;
-
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
 ### Prerequisites
 
-This instructions are known to work on Ubuntu 16.06 LTC, it may work on other Linux Distributions.
+This instructions are known to work on Ubuntu 16.04.3 LTS, it may or may not work on other Linux distributions/versions.
+If you use NGINX, like me, you'll want to set up your domain first (including SSL).
 
 ### Installing
 
 Clone this repository to your server.
 
-```
+```bash
 git clone https://github.com/ngoline/medium-domain-proxy
 ```
 
 Go to the downloaded folder
 
-```
+```bash
 cd medium-domain-proxy
 ```
 
-Look for this lines on the config file and change what's needed.
+Install npm packages
 
+```bash
+npm i
 ```
-// \/ \/ CHANGE HERE \/ \/
+
+Update the config file to change what's needed.
+
+```javascript
+// Change this to your full medium URI
+mediumUrl: 'https://medium.com/ngoline',
 ```
 
 Run the proxy
 
-```
+```bash
 npm start
-```
-
-## Running the tests
-
-After changing the configuration files you can run the tests to guarantee all is working.
-
-```
-npm test
-```
-
-### Break down into end to end tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
 ```
 
 ## Deployment
 
-Add additional notes about how to deploy this on a live system
+This instructions are to use PM2 as a Node.js process manager, but you can use any process manager you want.
+
+### Using PM2
+
+If you dont have PM2 installed just run
+
+```bash
+npm install pm2 -g
+```
+
+Then initialize the proxy process
+
+```bash
+pm2 start app.js
+```
 
 ## Built With
 
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
+* [Node.js](https://nodejs.org/)
+* [Express](https://expressjs.com/)
 
 ## Contributing
 
@@ -88,10 +83,4 @@ See also the list of [contributors](https://github.com/ngoline/medium-domain-pro
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-
-## Acknowledgments
-
-* If you like it you can tip me on Bitcoin.
-* Inspiration
-* etc
+This project is licensed under the Apache 2.0 License - see the [LICENSE.md](LICENSE.md) file for details
