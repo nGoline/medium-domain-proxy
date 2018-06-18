@@ -1,0 +1,30 @@
+{
+  "name": "medium-domain-proxy",
+  "version": "0.0.1",
+  "description": "This Node.js Proxy allows your Medium page to have a custom domain.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ngoline/medium-domain-proxy.git"
+  },
+  "keywords": [
+    "medium",
+    "custom",
+    "domain",
+    "proxy",
+    "ngoline"
+  ],
+  "author": "Níckolas Goline",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ngoline/medium-domain-proxy/issues"
+  },
+  "homepage": "https://github.com/ngoline/medium-domain-proxy#readme",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}
