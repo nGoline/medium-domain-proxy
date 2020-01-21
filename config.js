@@ -2,6 +2,9 @@ module.exports = {
   // Change this to your full medium URI
   mediumUrl: 'https://medium.com/ngoline',
 
+  // Change this to your medium username 
+  searchUserName: 'ngoline',
+
   // Change if you like to use another port. Default is 80
   httpPort: 80,
 
@@ -16,6 +19,9 @@ module.exports = {
     //certificate: 'sslcert/server.cts'
   },
 
-  // Uncoment to serve your own images on a public folder
-  publicFolder: 'public'
+  // Uncoment to serve your own files on a public folder
+  public: {
+    folder: 'public',
+    fileTypes: ['.jpg', '.png', '.txt']
+  }
 }

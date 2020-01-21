@@ -36,6 +36,9 @@ Update the config file to change what's needed.
 ```javascript
 // Change this to your full medium URI
 mediumUrl: 'https://medium.com/ngoline',
+
+// Change this to your medium username
+  searchUserName: 'ngoline',
 ```
 
 Run the proxy
