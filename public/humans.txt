@@ -1,5 +1,5 @@
-/* TEAM */                   
+/* TEAM */
 DEV: Níckolas Goline.
 Site: https://ngoline.com
-Twitter: nGoline_  
+Twitter: nGoline
 Location: São Paulo, Brazil
