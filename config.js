@@ -1,9 +1,9 @@
-module.exports = {
+export const config = {
   // Change this to your full medium URI
   mediumUrl: 'https://medium.com/ngoline',
 
   // Change this to your medium username 
-  searchUserName: 'ngoline',
+  searchUserName: 'nGoline',
 
   // Change if you like to use another port. Default is 80
   httpPort: 80,
